@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная страница</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="icon" href="images/fav.jpg" type="image/x-icon">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top flex flex-space-between flex-center-vertical">
+            <div class="header__logo"><a class="logo" href="index.html"><img src="images/logo.jpg" alt="company-logo"></a></div>
+            <nav class="header__nav flex flex-center-vertical">
+              <ul class="flex flex-space-between flex-center-vertical">
+                <li><a href="">Home</a></li>
+                <li><a href="">Find work</a></li>
+                <li><a href="">Find Freelancers</a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+              </ul>
+              <button class="btn">Post a project</button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="intro-section">
+          <div class="container">
+            <div class="intro flex">
+              <div class="intro__info">
+                <h1 class="intro__title">Are you looking for Freelancers?</h1>
+                <p class="intro__text">Hire Great Freelancers, Fast. Spacelance helps you hire elite freelancers at a moment's notice</p>
+                <div class="intro__btns flex flex-center-vertical">
+                  <button class="btn secondary">Hire a freelancer</button>
+                  <div class="search-form">
+                    <div class="search-holder flex flex-center-vertical flex-space-between">
+                      <form class="search">
+                        <input class="search__input" name="search" type="text" id="search" onkeyup="doSearchResult();" placeholder="search freelance work" autocomplete="on">
+                        <div class="search-result search-result-header">
+                          <ul class="search-result__list search-result__list-header">
+                            <li><a href="">search freelance work</a></li>
+                            <li><a href="">search freelance work</a></li>
+                            <li><a href="">search freelance work</a></li>
+                            <li><a href="">search freelance work</a></li>
+                            <li><a href="">search freelance work</a></li>
+                            <li><a href="">search freelance work</a></li>
+                          </ul>
+                        </div>
+                      </form>
+                      <button class="search-input-btn"><img src="images/search.png" alt="search-img"></button>
+                      <div class="search-result-close search-result-close-header">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#close"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intro__img"><img src="images/intro-img.png" alt="intro-img"></div>
+            </div>
+          </div>
+        </section>
+        <section class="instructions-section">
+          <div class="container">
+            <div class="instructions-wrap flex flex-space-between flex-center-vertical">
+              <div class="instructions">
+                <div class="instructions__wrap">
+                  <div class="instructions__img"><img src="images/inst-img1.png" alt="instructions-img1"></div><small class="instructions__title">Create Account</small>
+                  <p class="instructions__text text">First you have to create a account  here</p>
+                </div>
+              </div>
+              <div class="instructions">
+                <div class="instructions__wrap">
+                  <div class="instructions__img"><img src="images/inst-img2.png" alt="instructions-img2"></div><small class="instructions__title">Search work</small>
+                  <p class="instructions__text text">Search the best freelance work here</p>
+                </div>
+              </div>
+              <div class="instructions">
+                <div class="instructions__wrap">
+                  <div class="instructions__img"><img src="images/inst-img3.png" alt="instructions-img3"></div><small class="instructions__title">Save and apply</small>
+                  <p class="instructions__text text">Apply or save and start your work</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="find-intro-section">
+          <div class="container">
+            <div class="find-intro flex flex-space-between">
+              <div class="find-intro__img"><img src="images/find-intro-img.png" alt="find-intro-img">
+                <div class="find-intro__info-block find-intro__info-block1"><small class="find-intro__info-title">500+</small>
+                  <p class="find-intro__info-sub text">freelancers</p>
+                </div>
+                <div class="find-intro__info-block find-intro__info-block2"><small class="find-intro__info-title">300+</small>
+                  <p class="find-intro__info-sub text">freelance work Posted</p>
+                </div>
+              </div>
+              <div class="find-intro__info"><small class="find-intro__title">Find The Best <span> Freelancers </span> Here</small>
+                <p class="find-intro__sub text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus eget convallis. Feugiat imperdiet posuere justo, ultrices interdum sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra dui, sit accumsan, tincidunt massa. Dui cras magnis.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pagesSlider-section">
+          <div class="container">
+            <div class="slider-head">
+              <p class="slider-head__sub">The latest freelance work!</p><small class="slider-head__title">Recently Posted <span> Works</span></small>
+            </div>
+            <div class="pagesSlider-wrap">
+              <div class="pagesSlider">
+                <div class="pagesSlider-card">
+                  <div class="pagesSlider-card__img"><img src="images/slider-img1.png" alt="slider-img1"></div><small class="pagesSlider-card__title">Logo Design</small>
+                  <p class="pagesSlider-card__text">Need a professional logo with writing underneath for our jewellery company</p>
+                  <div class="pagesSlider-card__footer flex flex-space-between flex-center-vertical">
+                    <p class="pagesSlider-card__footer-price">Highest bid $500</p><a class="pagesSlider-card__link" href="">Apply now</a>
+                  </div>
+                </div>
+                <div class="pagesSlider-card">
+                  <div class="pagesSlider-card__img"><img src="images/slider-img2.png" alt="slider-img2"></div><small class="pagesSlider-card__title">Graphic Design</small>
+                  <p class="pagesSlider-card__text">We need a graphic designer with UI/UX skills for our Furniture company</p>
+                  <div class="pagesSlider-card__footer flex flex-space-between flex-center-vertical">
+                    <p class="pagesSlider-card__footer-price">Highest bid $500</p><a class="pagesSlider-card__link" href="">Apply now</a>
+                  </div>
+                </div>
+                <div class="pagesSlider-card">
+                  <div class="pagesSlider-card__img"><img src="images/slider-img3.png" alt="slider-img3"></div><small class="pagesSlider-card__title">Need a SEO</small>
+                  <p class="pagesSlider-card__text">Need a SEO for our company who will let our company to a higher level</p>
+                  <div class="pagesSlider-card__footer flex flex-space-between flex-center-vertical">
+                    <p class="pagesSlider-card__footer-price">Highest bid $300</p><a class="pagesSlider-card__link" href="">Apply now</a>
+                  </div>
+                </div>
+                <div class="pagesSlider-card">
+                  <div class="pagesSlider-card__img"><img src="images/slider-img2.png" alt="slider-img2"></div><small class="pagesSlider-card__title">Graphic Design</small>
+                  <p class="pagesSlider-card__text">We need a graphic designer with UI/UX skills for our Furniture company</p>
+                  <div class="pagesSlider-card__footer flex flex-space-between flex-center-vertical">
+                    <p class="pagesSlider-card__footer-price">Highest bid $500</p><a class="pagesSlider-card__link" href="">Apply now</a>
+                  </div>
+                </div>
+                <div class="pagesSlider-card">
+                  <div class="pagesSlider-card__img"><img src="images/slider-img3.png" alt="slider-img3"></div><small class="pagesSlider-card__title">Need a SEO</small>
+                  <p class="pagesSlider-card__text">Need a SEO for our company who will let our company to a higher level</p>
+                  <div class="pagesSlider-card__footer flex flex-space-between flex-center-vertical">
+                    <p class="pagesSlider-card__footer-price">Highest bid $300</p><a class="pagesSlider-card__link" href="">Apply now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pagesSlider-container flex flex-space-between">
+                <div class="slider-arrow pagesSlider-prev">
+                  <svg class="icon">
+                    <use xlink:href="/images/sprites.svg#arr"></use>
+                  </svg>
+                </div>
+                <div class="slider-arrow pagesSlider-next">
+                  <svg class="icon">
+                    <use xlink:href="/images/sprites.svg#arr"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-holder flex flex-space-between">
+            <div class="footer-holder__wrap">
+              <div class="footer-holder__logo"><a class="logo" href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+              <p class="footer-holder__text">Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)</p>
+              <div class="footer-holder__icons flex flex-center-vertical flex-space-between"><a class="footer-holder__icon" href="">
+                  <svg>
+                    <use xlink:href="/images/sprites.svg#inst"></use>
+                  </svg></a><a class="footer-holder__icon tw" href="">
+                  <svg>
+                    <use xlink:href="/images/sprites.svg#tw"></use>
+                  </svg></a><a class="footer-holder__icon" href="">
+                  <svg>
+                    <use xlink:href="/images/sprites.svg#fb"></use>
+                  </svg></a></div>
+            </div>
+            <div class="footer-holder__wrap"><small class="footer-holder__title">For Clients</small>
+              <ul>
+                <li><a href="">Find Freelancers</a></li>
+                <li><a href="">Post Project</a></li>
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-holder__wrap"><small class="footer-holder__title">For Freelancers</small>
+              <ul>
+                <li><a href="">Find Work</a></li>
+                <li><a href="">Create Account</a></li>
+              </ul>
+            </div>
+            <div class="footer-holder__wrap"><small class="footer-holder__title">Call Us</small>
+              <ul>
+                <li><a class="link" href="">Kenya
+                    <svg>
+                      <use xlink:href="/images/sprites.svg#point"></use>
+                    </svg></a></li>
+                <li><a class="link" href="tel:25470000000">+25470000000
+                    <svg>
+                      <use xlink:href="/images/sprites.svg#phone"></use>
+                    </svg></a></li>
+                <li><a class="link" href="mailto:bluelance@gmail.com">bluelance@gmail.com
+                    <svg>
+                      <use xlink:href="/images/sprites.svg#mail"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="footer-rights">2022 Spacelance. All right reserved</p>
+        </div>
+        <div class="mobile-up" onclick="toTop();">
+          <svg>
+            <use xlink:href="images/sprite.svg#arr"></use>
+          </svg>
+        </div>
+      </footer>
+      <section class="empty-block"></section>
+    </div>
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    
+    
+    
+    
+    <script src="js/libs/slick.min.js"></script>
+    <script src="js/libs/svgxuse.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
